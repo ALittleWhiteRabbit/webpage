@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>webpage</title>
+        <style>
+        html {
+          font-family: sans-serif;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        .head {
+          width: 100%;
+          background-color: gray;
+          height: 50px;
+        }
+        .headcon {
+          width: 960px;
+          height: 50px;
+          margin: 0 auto;
+        }
+        .headtit {
+          line-height: 50px;
+          color: white;
+          font-size: 20px;
+        }
+        .headnav {
+          float:right;
+          font-size: 10px;
+        }
+        .headnav a {
+          color: white;
+        }
+        .banner {
+          width: 100%;
+          background-color: chartreuse;
+          height: 200px;
+        }
+        .bancon {
+          width:960px;
+          height: 200px;
+          margin: 0 auto;
+          position: relative;
+        }
+        .pagination {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        .pagination ul {
+          padding-right: 0;
+          margin-bottom: 0;
+        }
+        .pagination li {
+          list-style-type: none;
+          float: left;
+          padding-bottom: 0;
+        }
+        .pagination li a {
+          display: inline-block;
+          color: black;
+          border: 1px solid black;
+          padding: 2px 4px;
+          text-decoration: none;
+          margin: 0 5px;
+          background-color: rgb(174, 252, 215);
+        }
+        .pagination li a.active {
+          color: black;
+          border: 1px solid black;
+          padding: 5px 4px 2px 4px;
+          background-color: white;
+        }
+        .navigation {
+          width: 100%;
+          height: 50px;
+          border-bottom: 1px solid gray;
+        }
+        .navCon {
+          width: 960px;
+          height: 50px;
+          margin: 0 auto;
+        }
+        .navCon ul{
+          height: 50px;
+          padding-left: 3px;
+        }
+        .navCon li{
+          list-style-type: none;
+          width: 120px;
+          float: left;
+        }
+        .navCon li a{
+          display: inline-block;
+          text-decoration: none;
+          border: 1px solid gray;
+          border-radius: 25px 25px 0 0;
+          background-color: rgb(188, 189, 189);
+          width: 100%;
+          text-align: center;
+          color: black;
+          line-height: 3;
+        }
+        .navCon li a.active{
+          background-color: white;
+          border-bottom: 1px solid white;
+        }
+        .content {
+          width: 960px;
+          margin: 0 auto;
+        }
+        .first, .second, .third {
+          display: flex;
+          margin: 3px;
+        }
+        .con {
+          border: 1px solid gray;
+          text-align: center;
+          flex: 1;
+          margin: 3px;
+          padding: 80px;
+        }
+        .footer {
+          background-color: gray;
+          height:100px;
+          color:white;
+          font-size: 15px;
+          text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+          <div class="headcon">
+            <div class="headnav">
+              <a href="#">Github</a>
+              <a href="#">Register</a>
+              <a href="#">Login</a>
+            </div>
+            <div class="headtit">Logo</div>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="bancon">
+            <div class="pagination">
+              <ul>
+                <li><a href="#">1</a></li>
+                <li><a class="active" href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <div class="navCon">
+              <ul>
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">ABOUT</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="content">
+          <div class="first">
+            <section class="con">Content1</section>
+            <section class="con">Content2</section>
+            <section class="con">Content3</section>
+          </div>
+          <div class="second">
+            <section class="con">Content4</section>
+            <section class="con">Content5</section>
+            <section class="con">Content6</section>
+            <section class="con">Content7</section>
+          </div>
+          <div class="third">
+            <section class="con">Content8</section>
+            <section class="con">Content9</section>
+            <section class="con">Content10</section>
+          </div>
+        </div>
+        <div class="footer">&copy 2019 ife.baidu.com</div>
+    </body>
+</html>
